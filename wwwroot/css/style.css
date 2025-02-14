@@ -75,11 +75,10 @@ header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
     gap: 2rem;
-    max-width: 1200px;  
-    margin: 0 auto; 
-    padding: 1rem;  
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
 }
-
 
 .project-card {
     position: relative;
@@ -91,8 +90,13 @@ header {
     box-shadow: 0 2px 4px var(--shadow);
     filter: grayscale(40%) brightness(0.8);
     transition: filter 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
-    height: 400px;
+    min-height: 400px;
+    height: auto;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .flip-card-inner {
@@ -110,15 +114,15 @@ header {
     height: 100%;
     backface-visibility: hidden;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .flip-card-front {
     background-color: var(--header-bg);
     color: var(--text-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding: 1.5rem;
 }
 
@@ -131,6 +135,8 @@ header {
     transform: rotateY(180deg);
     text-align: left;
 }
+
+
 
 .project-card:hover .flip-card-inner {
     transform: rotateY(180deg);
