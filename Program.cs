@@ -10,7 +10,6 @@ builder.WebHost.UseUrls($"http://*:{port}");
 // Füge MVC-Dienste hinzu
 builder.Services.AddControllersWithViews();
 
-// Füge Lokalisierungsdienste hinzu, wobei Ressourcen im Ordner "Resources" liegen
 builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
 
 var app = builder.Build();
@@ -27,7 +26,6 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-// Konfiguration der unterstützten Kulturen (z.B. Deutsch und Englisch)
 var supportedCultures = new List<CultureInfo>
 {
     new CultureInfo("de-DE"),
