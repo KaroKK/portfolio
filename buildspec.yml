@@ -1,0 +1,21 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - echo Installing dependencies...
+      - dotnet restore
+  build:
+    commands:
+      - echo Building the project...
+      - dotnet publish -c Release -o output
+artifacts:
+  files:
+    - '**/*'
+  base-directory: output
+  cache:
+  paths:
+    - '/root/.nuget/packages/'
+  Source:
+  Type: CODEPIPELINE
+Artifacts:
+  Type: CODEPIPELINE
