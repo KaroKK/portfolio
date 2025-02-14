@@ -11,6 +11,12 @@
     --font-code: 'Fira Code', monospace;
 }
 
+html {
+    scroll-padding-top: 80px;
+}
+#about {
+    scroll-margin-top: 80px; 
+}
 
 
 * {
