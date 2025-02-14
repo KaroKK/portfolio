@@ -17,16 +17,16 @@ document.addEventListener("scroll", function () {
 document.addEventListener("DOMContentLoaded", () => {
     gsap.registerPlugin(ScrollTrigger);
 
-    // GSAP Animation (blocks falling down)
     gsap.utils.toArray(".project-card").forEach(card => {
         gsap.from(card, {
-            y: -150,            
-            opacity: 0,         
-            ease: "bounce.out",
-            duration: 0.8,
+            y: -400,                   
+            opacity: 0,               
+            duration: 0.5,             
+            ease: "power2.out",        
+            delay: Math.random() * 0.7,  
             scrollTrigger: {
-                trigger: ".project-container",
-                start: "top 90%",
+                trigger: card,         
+                start: "top 90%",       
                 toggleActions: "play none none reverse"
             }
         });
