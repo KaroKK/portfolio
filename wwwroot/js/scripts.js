@@ -13,3 +13,18 @@ document.addEventListener("scroll", function () {
         header.classList.remove("scrolled");
     }
 }); 
+document.addEventListener("DOMContentLoaded", () => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from(".section-reveal", {
+        height: 0, // Sekcja startuje jako niewidoczna
+        duration: 1,
+        ease: "power4.inOut",
+        scrollTrigger: {
+            trigger: ".section-reveal",
+            start: "top 80%", // Start, gdy sekcja osiągnie 80% wysokości okna
+            end: "bottom 20%",
+            scrub: true,
+        },
+    });
+});
