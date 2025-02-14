@@ -84,12 +84,9 @@ header {
     }
 
 .section {
-    position: relative;
-    display: block;
-    margin: 2rem auto;
-    padding: 2rem;
+    margin-bottom: 3rem;
+    scroll-margin-top: 65px;
 }
-
 
     .section h2 {
         font-size: 2rem;
