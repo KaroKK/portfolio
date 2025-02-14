@@ -1,8 +1,8 @@
-﻿// AOS Initialization
-AOS.init({
+﻿AOS.init({
     duration: 900,
     once: false,
 });
+
 
 // Scroll-based header animation
 document.addEventListener("scroll", function () {
@@ -12,4 +12,4 @@ document.addEventListener("scroll", function () {
     } else {
         header.classList.remove("scrolled");
     }
-});
+}); 
