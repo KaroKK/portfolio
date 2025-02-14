@@ -164,28 +164,8 @@ header {
 
 
 
-.flip-card-front,
 .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;  
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1.5rem;
-    box-sizing: border-box;
-}
-
-.flip-card-front {
-    background-color: var(--header-bg);
-    color: var(--text-color);
-}
-
-.flip-card-back {
-    background-color: var(--primary-color);
+    background-color: rgba(22, 27, 34, 0.9);
     color: var(--text-color);
     transform: rotateY(180deg);
     text-align: center;
