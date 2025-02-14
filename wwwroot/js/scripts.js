@@ -22,12 +22,12 @@ document.addEventListener("DOMContentLoaded", () => {
         gsap.from(card, {
             y: -150,            
             opacity: 0,         
-            duration: 0.8,        
-            ease: "bounce.out", 
+            ease: "bounce.out",
+            duration: 0.8,
             scrollTrigger: {
-                trigger: card,         
-                start: "top 90%",       
-                toggleActions: "play none none reverse"  
+                trigger: ".project-container",
+                start: "top 90%",
+                toggleActions: "play none none reverse"
             }
         });
     });
