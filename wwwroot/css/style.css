@@ -1,15 +1,15 @@
 ﻿:root {
-    --bg-color: #0d1117; /* Ciemne tło */
-    --header-bg: #161b22; /* Tło nagłówka */
-    --footer-bg: #161b22; /* Tło stopki */
-    --text-color: #c9d1d9; /* Jasny tekst */
-    --primary-color: #58a6ff; /* Żywy, niebieski akcent */
-    --secondary-color: #238636; /* Zielony akcent */
-    --border-color: #30363d; /* Kolor obramowań */
-    --shadow: rgba(0, 0, 0, 0.5); /* Cień */
-    --code-bg: #161b22; /* Tło bloków kodu */
-    --font-body: 'Inter', sans-serif; /* Nowoczesny font */
-    --font-code: 'Fira Code', monospace; /* Font dla kodu */
+    --bg-color: #0d1117;  
+    --header-bg: #161b22;  
+    --footer-bg: #161b22;  
+    --text-color: #c9d1d9;  
+    --primary-color: #58a6ff;  
+    --secondary-color: #9eb3a2; 
+    --border-color: #30363d; 
+    --shadow: rgba(0, 0, 0, 0.5);  
+    --code-bg: #161b22;  
+    --font-body: 'Inter', sans-serif;  
+    --font-code: 'Fira Code', monospace;  
 }
 
 html {
@@ -35,7 +35,6 @@ body {
     padding: 0 1rem;
 }
 
-/* Nagłówek */
 header {
     position: sticky;
     top: 0;
@@ -76,7 +75,6 @@ header {
         transform: scale(1.1);
     }
 
-/* Sekcje */
 .section {
     margin-bottom: 3rem;
     scroll-margin-top: 65px;
@@ -91,27 +89,27 @@ header {
 
 .project-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Minimalna szerokość kart */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  /
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
-    justify-content: center; /* Wyśrodkowanie kart w poziomie */
+    justify-content: center;  
 }
 
 .project-card {
     position: relative;
-    perspective: 1000px; /* Umożliwia efekt 3D */
+    perspective: 1000px; 
     background-color: var(--header-bg);
     border: 1px solid var(--border-color);
     border-radius: 8px;
     box-shadow: 0 2px 4px var(--shadow);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    min-height: 300px; /* Minimalna wysokość dla spójnego wyglądu */
+    min-height: 300px;  
     overflow: hidden;
     display: flex;
-    justify-content: center; /* Wyśrodkowanie treści w poziomie */
-    align-items: center; /* Wyśrodkowanie treści w pionie */
+    justify-content: center;  
+    align-items: center;  
     flex-direction: column;
 }
 
@@ -127,12 +125,12 @@ header {
     transition: transform 0.8s ease;
     transform-style: preserve-3d;
     display: flex;
-    justify-content: center; /* Wyśrodkowanie treści w poziomie */
-    align-items: center; /* Wyśrodkowanie treści w pionie */
+    justify-content: center;  
+    align-items: center;  
 }
 
 .project-card:hover .flip-card-inner {
-    transform: rotateY(180deg); /* Obrót o 180 stopni */
+    transform: rotateY(180deg);  
 }
 
 .flip-card-front,
@@ -140,11 +138,11 @@ header {
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden; /* Ukrywa tylną stronę, gdy nie jest widoczna */
+    backface-visibility: hidden;  
     border-radius: 8px;
     display: flex;
-    justify-content: center; /* Wyśrodkowanie treści w poziomie */
-    align-items: center; /* Wyśrodkowanie treści w pionie */
+    justify-content: center;  
+    align-items: center; 
     flex-direction: column;
     padding: 1.5rem;
     box-sizing: border-box;
@@ -163,7 +161,7 @@ header {
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden; /* Ukrywa tylną stronę, gdy nie jest widoczna */
+    backface-visibility: hidden;  
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -185,7 +183,7 @@ header {
     text-align: center;
     overflow-wrap: break-word;
     word-wrap: break-word;
-    overflow: auto; /* Dodano, aby dłuższy tekst był przewijany */
+    overflow: auto;  
     border: 1px solid var(--border-color);
     padding: 1rem;
 }
@@ -212,7 +210,7 @@ header {
 }
 
 
-/* Bloki kodu */
+
 pre {
     background-color: var(--code-bg);
     padding: 1rem;
@@ -230,7 +228,6 @@ code {
     border-radius: 4px;
 }
 
-/* Stopka */
 footer {
     background-color: var(--footer-bg);
     border-top: 1px solid var(--border-color);
@@ -255,7 +252,6 @@ a[href^="mailto:"] {
         border-bottom: 1px solid var(--primary-color);
     }
 
-/* O mnie */
 .about-me {
     position: relative;
     margin-bottom: 1rem;
@@ -282,7 +278,6 @@ a[href^="mailto:"] {
         padding: 10px;
     }
 
-/* Umiejętności */
 .skills {
     display: flex;
     flex-wrap: wrap;
