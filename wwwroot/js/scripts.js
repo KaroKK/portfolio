@@ -22,8 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
             y: -400,                   
             opacity: 0,               
             duration: 0.5,             
-            ease: "power2.out",        
-            delay: Math.random() * 0.7,  
+            ease: "bounce.out",        
             scrollTrigger: {
                 trigger: card,         
                 start: "top 90%",       
