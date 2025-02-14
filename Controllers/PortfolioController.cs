@@ -14,26 +14,25 @@ namespace Portfolio.Web.Controllers
                 {
                     Id = 1,
                     Titel = "Projekt 1",
-                    Beschreibung = "Beschreibung von Projekt 1",
-                    Technologien = "C#, WPF, MySQL",
+                    Beschreibung = "ERP Desktop Anwendung",
+                    Technologien = ".NET, C#, WPF, MySQL",
                 },
                 new() {
                     Id = 2,
-                    Titel = "Projekt 2",
-                    Beschreibung = "Beschreibung von Projekt 2",
-                    Technologien = "aaa, bbb, ccc",
+                     Beschreibung = "ERP Desktop Anwendung",
+                    Technologien = ".NET, C#, Windows Forms, MySQL",
                 },
                  new() {
                     Id = 3,
                     Titel = "Projekt 3",
-                    Beschreibung = "Beschreibung von Projekt 1",
-                    Technologien = "C#, WPF, MySQL",
+                    Beschreibung = "NotizY - Web Anwendung",
+                    Technologien = "PHP, HTML, CSS, Javascript, MySQL",
                 },
                   new() {
                     Id = 4,
                     Titel = "Projekt 4",
-                    Beschreibung = "Beschreibung von Projekt 1",
-                    Technologien = "C#, WPF, MySQL",
+                    Beschreibung = "Web-Forum",
+                    Technologien = "PHP, HTML, CSS, MySQL",
                 },
             };
 
