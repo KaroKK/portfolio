@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // GSAP Animation (blocks falling down)
     gsap.utils.toArray(".project-card").forEach(card => {
         gsap.from(card, {
-            y: -100,            
+            y: -150,            
             opacity: 0,         
             duration: 0.8,        
             ease: "bounce.out", 
