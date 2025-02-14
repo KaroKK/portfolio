@@ -1,10 +1,14 @@
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" fill="none">
   <title>KK Logo</title>
-  <rect width="500" height="500" fill="none"/>
-  <circle cx="250" cy="250" r="200" stroke="#61dafb" stroke-width="15" fill="none" />
+  <rect width="300" height="300" fill="none"/>
+  <defs>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="5" dy="5" stdDeviation="5" flood-color="#61dafb" />
+    </filter>
+  </defs>
   <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
-        font-family="Arial, sans-serif" font-size="120" fill="#61dafb">
-    KK
+        font-family="Arial, sans-serif" font-size="80" fill="#61dafb" filter="url(#shadow)">
+    &lt;K/K&gt;
   </text>
 </svg>
