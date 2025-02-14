@@ -13,9 +13,5 @@ artifacts:
     - '**/*'
   base-directory: output
   cache:
-  paths:
-    - '/root/.nuget/packages/'
-  Source:
-  Type: CODEPIPELINE
-Artifacts:
-  Type: CODEPIPELINE
+    paths:
+      - '/root/.nuget/packages/'
