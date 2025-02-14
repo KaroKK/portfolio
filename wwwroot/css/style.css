@@ -90,7 +90,7 @@ header {
     box-shadow: 0 2px 4px var(--shadow);
     filter: grayscale(40%) brightness(0.8);
     transition: filter 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
-    min-height: 400px;
+    min-height: 300px;
     height: auto;
     overflow: hidden;
     display: flex;
