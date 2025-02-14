@@ -96,7 +96,6 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    aspect-ratio: 16 / 9; /* Kontener o proporcjach 16:9 */
 }
 
 
