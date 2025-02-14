@@ -59,6 +59,11 @@ header {
         color: var(--primary-color);
         transform: scale(1.1);
     }
+.logo-img {
+    height: 80px; 
+    width: auto;  
+}
+
 
 .section {
     margin-bottom: 3rem;
