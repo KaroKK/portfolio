@@ -214,6 +214,7 @@ a[href^="mailto:"] {
 .about-me {
     position: relative;
     margin-bottom: 1rem;
+    text-align: justify;
 }
 
     .about-me .translation {
