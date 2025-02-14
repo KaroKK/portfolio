@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Localization;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var port = Environment.GetEnvironmentVariable("PORT") ?? "5000";
+var port = Environment.GetEnvironmentVariable("PORT") ?? "5023";
 builder.WebHost.UseUrls($"http://*:{port}");
 
 

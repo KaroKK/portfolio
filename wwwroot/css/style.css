@@ -27,7 +27,6 @@ body {
     color: var(--text-color);
     line-height: 1.6;
 }
-AKIAUJ3VURZZTYFRDTHF
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -74,7 +73,7 @@ header {
 
 .project-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
     gap: 2rem;
 }
 
