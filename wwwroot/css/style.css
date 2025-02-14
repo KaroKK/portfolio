@@ -91,13 +91,14 @@ header {
     filter: grayscale(40%) brightness(0.8);
     transition: filter 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
     min-height: 300px;
-    height: auto;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    aspect-ratio: 16 / 9; /* Kontener o proporcjach 16:9 */
 }
+
 
 .flip-card-inner {
     position: relative;
