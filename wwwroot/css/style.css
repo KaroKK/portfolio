@@ -73,7 +73,7 @@ header {
 
 .project-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr)); 
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -97,6 +97,33 @@ header {
     justify-content: center;
     align-items: center;
 }
+
+.project-img {
+    width: 100%;
+    height: auto;
+    border: 4px solid #61dafb;
+    border-radius: 8px;
+    margin-top: 10px;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .project-container {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));  
+    }
+
+    .project-card {
+        min-height: 200px; 
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .project-container {
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr)); 
+    }
+}
+
 
 
 .flip-card-inner {
@@ -142,15 +169,6 @@ header {
     transform: rotateY(180deg);
 }
 
-.project-img {
-    width: 100%;  
-    height: auto;  
-    border: 4px solid #61dafb;
-    border-radius: 8px;
-    margin-top: 10px;
-    object-fit: cover; 
-    display: block; 
-}
 
 
 pre {
@@ -270,14 +288,3 @@ a[href^="mailto:"] {
         margin-right: 8px;
     }
 
-@media (max-width: 768px) {
-    .project-container {
-        grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));  
-    }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-    .project-container {
-        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr)); 
-    }
-}
