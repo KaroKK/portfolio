@@ -75,7 +75,11 @@ header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
     gap: 2rem;
+    max-width: 1200px;  
+    margin: 0 auto; 
+    padding: 1rem;  
 }
+
 
 .project-card {
     position: relative;
@@ -256,3 +260,15 @@ a[href^="mailto:"] {
     .skill-line i {
         margin-right: 8px;
     }
+
+@media (max-width: 768px) {
+    .project-container {
+        grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));  
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .project-container {
+        grid-template-columns: repeat(auto-fit, minmax(45%, 1fr)); 
+    }
+}
