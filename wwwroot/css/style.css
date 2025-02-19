@@ -344,9 +344,8 @@ a[href^="mailto:"] {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-    /* Pola formularza */
     #contact-form .form-control {
-        width: 100% !important; /* Pola zajmują całą szerokość formularza */
+        width: 6S0% !important; 
     }
 
    

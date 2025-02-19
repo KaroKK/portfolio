@@ -126,7 +126,7 @@
                 <p>E-mail: <a href="mailto:kuster.karolina@yahoo.com">kuster.karolina@yahoo.com</a></p>
 
                 <!-- Form -->
-                <form id="contact-form" action="/send-message" method="post">
+                <form id="contact-form" action="@Url.Action("SendMessage", "Home")" method="post">
                     <div class="mb-3">
                         <label for="name" class="form-label">Name</label>
                         <input type="text" class="form-control" id="name" name="name" placeholder="Name eingeben" required>
