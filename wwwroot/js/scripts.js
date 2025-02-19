@@ -34,33 +34,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-    const form = document.getElementById("contact-form");
-
-    form.addEventListener("submit", (event) => {
-        event.preventDefault(); 
-
-        const formData = new FormData(form);
-
-        fetch(form.action, {
-            method: "POST",
-            body: formData
-        })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error("Fehler");
-                }
-                return response.json();
-            })
-            .then(data => {
-                if (data.success) {
-                    alert("Danke!");
-                    form.reset();
-                } else {
-                    alert("Fehler: " + data.responseText);
-                }
-            })
-            .catch(error => console.error("Fehler:", error));
-    });
-});
-

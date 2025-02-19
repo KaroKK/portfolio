@@ -38,20 +38,8 @@ namespace Portfolio.Web.Controllers
 
             return View(projekte);
         }
-        public IActionResult SendMessage(string name, string email, string message)
-        {
-            if (string.IsNullOrWhiteSpace(name) ||
-                string.IsNullOrWhiteSpace(email) ||
-                string.IsNullOrWhiteSpace(message))
-            {
-                return BadRequest("Alles ausfüllen.");
-            }
-
-
-            return Json(new { success = true, responseText = "Danke für Ihre Nachricht!" });
-        }
-
+    
+    
     }
-
 }
 
