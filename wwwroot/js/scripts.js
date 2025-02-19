@@ -40,19 +40,27 @@ document.addEventListener("DOMContentLoaded", () => {
     form.addEventListener("submit", (event) => {
         event.preventDefault(); 
 
-        // Form
-        const name = document.getElementById("name").value;
-        const email = document.getElementById("email").value;
-        const message = document.getElementById("message").value;
+        const formData = new FormData(form);
 
-        if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
-            alert("Bitte, alles ausfüllen!!");
-            return;
-        }
-
-        setTimeout(() => {
-            alert(`Danke, ${name}! Ihre Nachricht wurde gesendet.`);
-            form.reset(); 
-        }, 1000);
+        fetch(form.action, {
+            method: "POST",
+            body: formData
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Fehler");
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (data.success) {
+                    alert("Danke!");
+                    form.reset();
+                } else {
+                    alert("Fehler: " + data.responseText);
+                }
+            })
+            .catch(error => console.error("Fehler:", error));
     });
 });
+
