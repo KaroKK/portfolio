@@ -19,15 +19,40 @@ document.addEventListener("DOMContentLoaded", () => {
 
     gsap.utils.toArray(".project-card").forEach(card => {
         gsap.from(card, {
-            y: -400,                   
-            opacity: 0,               
-            duration: 0.5,             
-            ease: "bounce.out",        
+            scale: 1.2,        
+            opacity: 0,        
+            duration: 1,      
+            ease: "power2.out",
             scrollTrigger: {
-                trigger: card,         
-                start: "top 90%",       
-                toggleActions: "play none none reverse"
+                trigger: card,   
+                start: "top 85%",  
+                end: "top 50%",   
+                scrub: false,     
+                toggleActions: "play none none reverse" 
             }
         });
+    });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("contact-form");
+
+    form.addEventListener("submit", (event) => {
+        event.preventDefault(); 
+
+        // Form
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+
+        if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
+            alert("Bitte, alles ausfüllen!!");
+            return;
+        }
+
+        setTimeout(() => {
+            alert(`Danke, ${name}! Ihre Nachricht wurde gesendet.`);
+            form.reset(); 
+        }, 1000);
     });
 });

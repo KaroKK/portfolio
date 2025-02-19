@@ -333,3 +333,20 @@ a[href^="mailto:"] {
         opacity: 1;
     }
 }
+/* Ustawienie szerokości formularza */
+#contact-form {
+    width: 300px !important; /* Stała szerokość formularza */
+    max-width: 60% !important; /* Na mniejszych ekranach nie przekroczy 90% szerokości */
+    margin: 0 auto !important; /* Wyśrodkowanie formularza */
+    background: var(--header-bg);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+    /* Pola formularza */
+    #contact-form .form-control {
+        width: 100% !important; /* Pola zajmują całą szerokość formularza */
+    }
+
+   
