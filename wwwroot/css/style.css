@@ -334,13 +334,16 @@ a[href^="mailto:"] {
     }
 }
 #contact-form {
-    width: 600px;  
-    max-width: 90%;  
-    margin: 0 auto; 
+    width: 600px;
+    max-width: 90%;
+    margin: 0 auto;
     background: var(--header-bg);
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 14px 0 rgba(105,139,182,1);
+    backdrop-filter: blur( 18px );
+    -webkit-backdrop-filter: blur( 18px );
+    border-radius: 10px;
+    rgba( 255, 255, 255, 0.18 );
 }
 
     #contact-form .form-control {
@@ -349,15 +352,17 @@ a[href^="mailto:"] {
 
 
 .line-container {
-    width: 100%; /* Kontener zajmuje pełną szerokość strony */
-    max-width: 100%; /* Możesz zwiększyć, jeśli kontener strony jest większy */
-    height: 280px; /* Ustalona wysokość linii */
-    margin: 0 auto; /* Wyśrodkowanie kontenera */
-    overflow: hidden; /* Ukrywa nadmiar obrazka */
+    width: 100%;  
+    max-width: 100%;  
+    height: 4px;  
+    margin: 0 auto;  
+    overflow: hidden;  
+    background: rgb(0,19,36);
+    background: linear-gradient(90deg, rgba(0,19,36,1) 0%, rgba(91,135,179,0.9976584383753502) 30%, rgba(105,139,182,0.9416360294117647) 40%, rgba(91,135,179,0.8632046568627451) 55%, rgba(105,139,182,1) 60%, rgba(0,19,36,1) 97%, rgba(0,19,36,1) 97%);
 }
 
 .my-line {
-    width: 100%; /* Rozciąga obrazek na pełną szerokość kontenera */
-    height: 280px; /* Dopasowanie wysokości do kontenera */
+    width: 100%;  
+    height: 280px;  
     display: block;
-}
+ }
