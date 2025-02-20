@@ -123,26 +123,32 @@
         <section id="kontakt" class="section" data-aos="fade-up">
             <div class="container">
                 <h2>Kontakt</h2>
-                <p>E-mail: <a href="mailto:kuster.karolina@yahoo.com">kuster.karolina@yahoo.com</a></p>
-
-                <!-- Contact form with Formspree-->
-                <form id="contact-form" action="https://formspree.io/f/xkgokppj" method="POST">
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Name eingeben" required>
+                <div class="row align-items-center">
+                    <!-- Lewa kolumna: Formularz -->
+                    <div class="col-md-6">
+                        <form id="contact-form" action="https://formspree.io/f/xkgokppj" method="POST">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Name eingeben" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">E-mail</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="E-mail eingeben" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Nachricht</label>
+                                <textarea class="form-control" id="message" name="message" rows="4" placeholder="Nachricht" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Senden</button>
+                        </form>
                     </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">E-mail</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="E-mail eingeben" required>
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <img src="/images/mail-icon.png" alt="Mail Icon" class="img-fluid" style="max-width: 300px;">
                     </div>
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Nachricht</label>
-                        <textarea class="form-control" id="message" name="message" rows="4" placeholder="Nachricht" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Senden</button>
-                </form>
+                </div>
             </div>
         </section>
+
 
     </main>
 
