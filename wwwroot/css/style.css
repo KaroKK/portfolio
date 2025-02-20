@@ -361,8 +361,4 @@ a[href^="mailto:"] {
     background: linear-gradient(90deg, rgba(0,19,36,1) 0%, rgba(91,135,179,0.9976584383753502) 30%, rgba(105,139,182,0.9416360294117647) 40%, rgba(91,135,179,0.8632046568627451) 55%, rgba(105,139,182,1) 60%, rgba(0,19,36,1) 97%, rgba(0,19,36,1) 97%);
 }
 
-.my-line {
-    width: 100%;  
-    height: 280px;  
-    display: block;
- }
+ 
