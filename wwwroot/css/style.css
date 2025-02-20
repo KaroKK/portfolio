@@ -347,4 +347,17 @@ a[href^="mailto:"] {
         width: 8S% !important; 
     }
 
-   
+
+.line-container {
+    width: 100%; /* Kontener zajmuje pełną szerokość strony */
+    max-width: 100%; /* Możesz zwiększyć, jeśli kontener strony jest większy */
+    height: 280px; /* Ustalona wysokość linii */
+    margin: 0 auto; /* Wyśrodkowanie kontenera */
+    overflow: hidden; /* Ukrywa nadmiar obrazka */
+}
+
+.my-line {
+    width: 100%; /* Rozciąga obrazek na pełną szerokość kontenera */
+    height: 280px; /* Dopasowanie wysokości do kontenera */
+    display: block;
+}
