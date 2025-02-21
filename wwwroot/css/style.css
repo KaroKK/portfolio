@@ -362,18 +362,18 @@ a[href^="mailto:"] {
 }
 @media (max-width: 768px) {
     #kontakt .row {
-        flex-direction: column-reverse; /* Zamienia kolejność elementów na małych ekranach */
-        text-align: center; /* Wyśrodkowanie elementów */
+        flex-direction: column-reverse;  
+        text-align: center; 
     }
 
     #kontakt img {
-        max-width: 120px; /* Mniejszy rozmiar ikony na telefonach */
-        margin-bottom: 15px; /* Dodaje odstęp między ikoną a formularzem */
+        max-width: 120px;  
+        margin-bottom: 15px; 
     }
 
     #contact-form {
-        width: 100%; /* Formularz zajmuje całą szerokość na telefonach */
-        max-width: 90%; /* Maksymalna szerokość, żeby nie był zbyt szeroki */
-        margin: 0 auto; /* Wyśrodkowanie formularza */
+        width: 100%; 
+        max-width: 90%; 
+        margin: 0 auto; 
     }
 }
