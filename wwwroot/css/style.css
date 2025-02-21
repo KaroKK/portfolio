@@ -360,5 +360,20 @@ a[href^="mailto:"] {
     background: rgb(0,19,36);
     background: linear-gradient(90deg, rgba(0,19,36,1) 0%, rgba(91,135,179,0.9976584383753502) 30%, rgba(105,139,182,0.9416360294117647) 40%, rgba(91,135,179,0.8632046568627451) 55%, rgba(105,139,182,1) 60%, rgba(0,19,36,1) 97%, rgba(0,19,36,1) 97%);
 }
+@media (max-width: 768px) {
+    #kontakt .row {
+        flex-direction: column-reverse; /* Zamienia kolejność elementów na małych ekranach */
+        text-align: center; /* Wyśrodkowanie elementów */
+    }
 
- 
+    #kontakt img {
+        max-width: 120px; /* Mniejszy rozmiar ikony na telefonach */
+        margin-bottom: 15px; /* Dodaje odstęp między ikoną a formularzem */
+    }
+
+    #contact-form {
+        width: 100%; /* Formularz zajmuje całą szerokość na telefonach */
+        max-width: 90%; /* Maksymalna szerokość, żeby nie był zbyt szeroki */
+        margin: 0 auto; /* Wyśrodkowanie formularza */
+    }
+}
