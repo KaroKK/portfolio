@@ -35,4 +35,35 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    console.log("scripts.js ok"); 
+
+    if (typeof gsap === "undefined") {
+        console.error("kein GSAP!");
+        return;
+    }
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    const logo = document.querySelector(".navbar-logo");
+
+    if (logo) {
+        gsap.from(logo, {
+            opacity: 0,
+            scale: 2,
+            duration: 1,
+            ease: "power2.out"
+        });
+
+        gsap.to(logo, {
+            scrollTrigger: {
+                trigger: ".navbar",
+                start: "top top",
+                scrub: true
+            },
+            scale: 0.8,
+            transformOrigin: "center center"
+        });
+    } 
+});
 

@@ -12,6 +12,7 @@
     --font-code: 'Fira Code', monospace;  
 }
 
+
 html {
     scroll-padding-top: 130px;
 }
@@ -59,12 +60,20 @@ header {
     }
 
 .navbar-logo {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease;
     height: 80px;
     width: auto;
     display: block;
     visibility: visible;
     opacity: 1;
+    transform-origin: center center;
 }
+
+    .navbar-logo:hover {
+        transform: scale(1.1) rotate(5deg);
+    }
+
+
 
 .navbar-brand {
     display: flex;
