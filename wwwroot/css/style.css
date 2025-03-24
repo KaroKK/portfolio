@@ -352,12 +352,12 @@ a[href^="mailto:"] {
     backdrop-filter: blur( 18px );
     -webkit-backdrop-filter: blur( 18px );
     border-radius: 10px;
-    rgba( 255, 255, 255, 0.18 );
+    background: rgba(255, 255, 255, 0.18);
 }
 
     #contact-form .form-control {
-        width: 8S% !important; 
-    }
+        width: 85% !important; 
+    };
 
 
 .line-container {

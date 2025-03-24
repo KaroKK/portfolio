@@ -1,6 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Collections.Generic;
+using Microsoft.AspNetCore.Mvc;
 using Portfolio.Web.Models;
-using System.Collections.Generic;
 
 namespace Portfolio.Web.Controllers
 {
@@ -10,12 +10,11 @@ namespace Portfolio.Web.Controllers
         {
             var projekte = new List<Projekt>
             {
-                new Projekt
-                {
+                new() {
                     Id = 1,
                     Titel = "Projekt 1",
-                    Beschreibung = "ERP Desktop Anwendung",
-                    Technologien = ".NET, C#, WPF, MySQL",
+                    Beschreibung = "Finanzverwaltung Web Anwendung",
+                    Technologien = "C# .NET Core Web API, React+Vite, PostgreSQL",
                 },
                 new() {
                     Id = 2,
@@ -34,12 +33,18 @@ namespace Portfolio.Web.Controllers
                     Beschreibung = "Web-Forum",
                     Technologien = "PHP, HTML, CSS, MySQL",
                 },
+                 new() {
+                    Id = 5,
+                    Titel = "Projekt 5",
+                    Beschreibung = "ERP Desktop Anwendung",
+                    Technologien = ".NET, C#, WPF, MySQL",
+                }
             };
 
             return View(projekte);
         }
-    
-    
+
+
     }
 }
 

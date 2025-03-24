@@ -7,7 +7,7 @@ var port = Environment.GetEnvironmentVariable("PORT") ?? "5023";
 builder.WebHost.UseUrls($"http://*:{port}");
 
 
-// Füge MVC-Dienste hinzu
+// Fuege MVC-Dienste hinzu
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
